@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    /* Humanist Clean Palette */
-    --primary-color: #2563eb;
-    --primary-hover: #1d4ed8;
-    --bg-color: #fcfcfc;
-    --bg-alt: #f3f4f6;
-    --text-primary: #111827;
-    --text-secondary: #4b5563;
-    --text-muted: #9ca3af;
+    /* Executive Slate Palette */
+    --primary-color: #1e293b;       /* Deep Slate for high contrast professionalism */
+    --primary-hover: #0f172a;       /* Almost black */
+    --accent-color: #2563eb;        /* Classic Royal Blue for precise highlights */
+    --bg-color: #ffffff;
+    --bg-alt: #f8fafc;              /* Soft ice gray */
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
     --card-bg: #ffffff;
-    --border-color: #e5e7eb;
+    --border-color: #e2e8f0;
     
     /* Soft shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -171,11 +172,13 @@ nav {
 }
 
 .greeting {
-    font-size: 1.1rem;
-    color: var(--primary-color);
+    font-size: 1.15rem;
+    color: var(--accent-color);
     font-weight: 600;
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .hero-content h1 {
@@ -347,10 +350,10 @@ nav {
 .timeline-date {
     font-size: 0.875rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--text-primary);
     display: inline-block;
-    background-color: rgba(37, 99, 235, 0.1);
-    padding: 0.2rem 0.6rem;
+    background-color: var(--border-color);
+    padding: 0.3rem 0.8rem;
     border-radius: 12px;
     margin-bottom: 0.5rem;
 }
@@ -438,7 +441,7 @@ nav {
     content: '→';
     position: absolute;
     left: 0;
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-weight: bold;
 }
 
@@ -501,8 +504,8 @@ nav {
 
 .skill-icon {
     font-size: 2rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 1.2rem;
 }
 
 .skill-category h3 {
